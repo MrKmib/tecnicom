@@ -1,21 +1,26 @@
 <?php
-
-use App\Controllers\ContactController;
-use Lib\Route;
+// use Pecee\SimpleRouter\SimpleRouter;
 use App\Controllers\HomeController;
+use App\Controllers\LoginController;
+use Lib\Route;
 
 Route::get('/',[HomeController::class, 'index']);
+Route::get('/prueba',[HomeController::class, 'prueba']);
+
+Route::get('/send',[LoginController::class, 'send']);
+//Auth Login
+Route::get('/login', [LoginController::class, 'sesion']);
+Route::post('/login', [LoginController::class,'validar']);
+Route::get('/cliente', [LoginController::class,'vistaCliente']);
+Route::post('/logout', [LoginController::class,'logout']);
+Route::post('/contacts', [LoginController::class,'store']);
+
+Route::get('/mensajes', [LoginController::class,'vistaAdmin']);
+Route::get('/mensajes/:id',[LoginController::class,'show']);
+Route::post('/mensajes/:id/delete', [LoginController::class,'destroy']);
 
 
-//CRUD para formulario
-Route::get('/contacts',[ContactController::class,'index']);
-Route::get('/contacts/create', [ContactController::class,'create']);
-Route::post('/contacts', [ContactController::class,'store']);
-Route::get('/contacts/:id',[ContactController::class,'show']);
-Route::get('/contacts/:id/edit',[ContactController::class,'edit']);
-Route::post('/contacts/:id', [ContactController::class,'update']);
-Route::post('/contacts/:id/delete', [ContactController::class,'destroy']);
 
 
-//----------------------------
+//-----start the routing-----------------------
 Route::dispatch();

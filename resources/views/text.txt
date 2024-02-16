@@ -1,0 +1,80 @@
+
+
+<!-- ======= Top Bar ======= -->
+<section id="topbar" class="d-flex align-items-center">
+  <?php include '../day/components/topbar.php';?>
+</section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <?php include '../day/components/header.php';?>
+  </header>
+  <!-- End Header -->
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+  <?php include '../day/components/hero.php';?>
+  </section>
+  <!-- End Hero -->
+
+
+  <main id="main">
+
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+  <?php include '../tm6cf/resources/views/components/about.php';?>
+</section>
+<!-- End About Section -->
+
+<!-- ======= Why Us Section ======= -->
+<section id="why-us" class="why-us">
+<?php include '../tm6cf/resources/views/components/nosotros.php';?>
+</section>
+<!-- End Why Us Section -->
+
+<!-- ======= Clients Section ======= -->
+<section id="clients" class="clients">
+  <h1> Clientes</h1>
+<?php include '../tm6cf/resources/views/components/clientes.php';?>
+</section><!-- End Clients Section -->
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+<?php include '../tm6cf/resources/views/components/servicios.php';?>
+</section>
+<!-- End Services Section -->
+
+<!-- ======= Cta Section ======= -->
+<section id="cta" class="cta">
+  <div class="container" data-aos="zoom-in">
+
+    <div class="text-center">
+      <h3>Contactar</h3>
+      <p> Para solicitar un servicio puede darle click al boton de abajo.</p>
+      <a class="cta-btn" href="#">Empezar</a>
+    </div>
+
+  </div>
+</section>
+<!-- End Cta Section -->
+
+<!-- ======= Portfolio Section ======= -->
+
+<!-- End Portfolio Section -->
+
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+<?php include '../tm6cf/resources/views/components/precios.php';?>
+</section><!-- End Pricing Section -->
+
+<!-- ======= Team Section ======= -->
+<section id="team" class="team">
+<?php include '../tm6cf/resources/views/components/equipo.php';?>
+</section><!-- End Team Section -->
+
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+<?php include '../tm6cf/resources/views/components/contacto.php';?>
+</section><!-- End Contact Section -->
+
+</main>
